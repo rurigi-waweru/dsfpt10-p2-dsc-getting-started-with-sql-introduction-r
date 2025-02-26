@@ -103,9 +103,46 @@ Below each of the table names, we have a list of the various column names associ
 
 In addition to the names of the tables and their column names, we have an indication of relationships. For example, data in the employees table has some relationship to data on the offices table, indicating that an employee may be associated with a specific office location. Likewise, certain orders are associated with certain customers. Lots of real world data is inherently related. For example, students have an association to a course, or ingredients are related to a recipe.
 
-`Note: Meaning of ERD-arrows`
+### Note: Meaning of ERD-arrows
 
 <img src="https://github.com/rurigi-waweru/dsfpt10-p2-dsc-getting-started-with-sql-introduction-r/blob/master/brian-study-images/erd-sql-arrow-images.png" />
+
+
+In an Entity-Relationship Diagram (ERD), arrows are used to represent relationships between entities and provide additional information about the type of relationship. Here's a breakdown of what different types of arrows signify:
+
+> 1. Straight Line: Represents a relationship between two entities. A straight line without arrows is the basic connection showing a relationship between entities but doesn't specify the direction or cardinality.
+
+> 2. Arrowhead at the End of a Line (One-to-Many or One-to-One Relationship):
+
+>> One-to-Many (1:N): In this type of relationship, the arrow points from the "one" side to the "many" side. For example, one customer can place many orders, so the arrow points from Customer to Order.
+
+>> One-to-One (1:1): If both entities participate in a one-to-one relationship, the arrows would point in both directions, indicating that each instance of one entity relates to exactly one instance of the other entity.
+
+> 3. Crow’s Foot (Three Pronged Line) at the End of the Relationship Line (Many-to-Many Relationship):
+
+This symbol is used to show the "many" side of a relationship. A crow’s foot looks like three short lines fanning out, and it indicates that one entity can have multiple instances related to another entity. It is commonly used in many-to-many relationships (e.g., many students can enroll in many courses).
+Double Arrows (Identifying Relationships or Weak Entity):
+
+> 4. A double arrow usually represents an identifying relationship, meaning that one entity depends on another for its identity (e.g., a Dependent entity that relies on an Employee entity).
+It can also be used for weak entities that don’t have a primary key of their own and depend on a strong (or parent) entity.
+Dashed Arrows:
+
+> 5. A dashed arrow typically indicates a derived relationship or non-identifying relationship, which doesn't directly impact the identity of the entities. It may be used to indicate something that can be computed or inferred from other data.
+Directionality:
+
+> If arrows are explicitly drawn in one direction, it signifies a unidirectional relationship, meaning that data flows in one direction only.
+
+> In contrast, if both ends of the relationship line have arrows, it suggests bidirectional relationships, where data flows in both directions.
+
+
+#### Summary:
+
+> Arrow with Crow's Foot: Many-to-one or many-to-many relationship.
+> Arrow with a single head: One-to-one or one-to-many relationship.
+> Dashed Arrow: Non-identifying or derived relationships.
+> Double Arrows: Identifying or weak entity relationships.
+
+Understanding the meaning of arrows in an ERD helps in better visualizing and designing database structures and relationships.
 
 
 ### Primary Keys and Foreign Keys
