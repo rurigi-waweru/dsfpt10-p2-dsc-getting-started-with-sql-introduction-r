@@ -105,7 +105,7 @@ In addition to the names of the tables and their column names, we have an indica
 
 `Note: Meaning of ERD-arrows`
 
-<img src="https://github.com/learn-co-curriculum/dsc-getting-started-sql-intro/raw/master/Database-Schema.png" />
+<img src="https://github.com/rurigi-waweru/dsfpt10-p2-dsc-getting-started-with-sql-introduction-r/blob/master/brian-study-images/erd-sql-arrow-images.png" />
 
 
 ### Primary Keys and Foreign Keys
