@@ -103,6 +103,11 @@ Below each of the table names, we have a list of the various column names associ
 
 In addition to the names of the tables and their column names, we have an indication of relationships. For example, data in the employees table has some relationship to data on the offices table, indicating that an employee may be associated with a specific office location. Likewise, certain orders are associated with certain customers. Lots of real world data is inherently related. For example, students have an association to a course, or ingredients are related to a recipe.
 
+`Note: Meaning of ERD-arrows`
+
+<img src="https://github.com/learn-co-curriculum/dsc-getting-started-sql-intro/raw/master/Database-Schema.png" />
+
+
 ### Primary Keys and Foreign Keys
 
 You may also note that some of these column names are preceded by an asterisk (`*`). This indicates that this is the ***primary key*** for the table. A primary key is a unique identifier for a table. That is, there can only be unique values for this column entry. `lastName` would not be a good choice for a primary key as it's common for people to have the same last names or even `firstName + lastName` pairings. For this reason it is typical for a primary key to have a name reflecting some kind of "number", "code", or "id" — something that is truly unique to that record, which may or may not have any meaning beyond the database itself.
